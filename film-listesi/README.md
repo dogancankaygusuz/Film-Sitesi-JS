@@ -3,7 +3,7 @@
 Bu proje, modern web teknolojileri kullanılarak sıfırdan geliştirilmiş frontend uygulamasıdır. Proje yönergesinde istenen tüm şartlar eksiksiz olarak yerine getirilmiş, ekstra özelliklerle zenginleştirilmiştir.
 
 ## 🔗 Canlı Demo
-Projeyi canlı olarak incelemek için tıklayın: **[BURAYA-NETLIFY-LINKINI-YAPISTIR]**
+Projeyi canlı olarak incelemek için tıklayın: **https://filmsitesijs.netlify.app/**
 
 ## 📸 Ekran Görüntüleri
 
