@@ -1,73 +1,32 @@
-# React + TypeScript + Vite
+# 🎬 Film ve Dizi İzleme Listesi (React + TypeScript + Tailwind)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bu proje, modern web teknolojileri kullanılarak sıfırdan geliştirilmiş frontend uygulamasıdır. Proje yönergesinde istenen tüm şartlar eksiksiz olarak yerine getirilmiş, ekstra özelliklerle zenginleştirilmiştir.
 
-Currently, two official plugins are available:
+## 🔗 Canlı Demo
+Projeyi canlı olarak incelemek için tıklayın: **[BURAYA-NETLIFY-LINKINI-YAPISTIR]**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📸 Ekran Görüntüleri
 
-## React Compiler
+<img width="1918" height="1090" alt="SS" src="https://github.com/user-attachments/assets/2a442921-5ceb-44db-89ef-315b8e994e53" />
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🎯 Proje Özellikleri (CRUD İşlemleri)
+Eğitim yönergelerinde istenen 4 temel işlem başarıyla uygulanmıştır:
+- **Ekleme (Create):** Kullanıcılar yeni film veya dizi ekleyebilir.
+- **Listeleme (Read):** Eklenen öğeler dinamik olarak listelenir. Üst kısımda anlık istatistikler (Toplam, İzlenen, Kalan) gösterilir.
+- **Güncelleme (Update):** 
+  - Filmler kutucuğa tıklanarak "İzlendi" olarak işaretlenebilir.
+  - **"Düzenle"** butonu ile film isimleri sonradan güncellenebilir.
+- **Silme (Delete):** Eklenen öğeler listeden kalıcı olarak silinebilir.
+- **🌟 Ekstra Özellik (LocalStorage):** Tüm veriler tarayıcının yerel hafızasına kaydedilir. Sayfa yenilendiğinde veriler kaybolmaz!
 
-## Expanding the ESLint configuration
+## 🛠️ Kullanılan Teknolojiler
+- **Altyapı:** Vite & ReactJS
+- **Dil:** TypeScript (Kural ve Interface yönetimi için)
+- **Tasarım:** Tailwind CSS
+- **Canlı Yayın:** Netlify
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 📂 Proje Mimarisi (Dosya Ağacı)
+Yönergede istenen klasörleme yapısı profesyonel olarak kurulmuştur:
+- `src/Components/` : Tekrar kullanılabilir arayüz parçaları (`AddMovieForm`, `MovieItem`).
+- `src/Pages/` : Tüm mantığın ve CRUD işlemlerinin yönetildiği ana sayfa (`HomePage`).
+- `src/Interfaces/` : TypeScript tip ve kural tanımlamaları (`IMovie`).
