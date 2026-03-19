@@ -3,7 +3,7 @@
 Bu proje, modern web teknolojileri kullanılarak sıfırdan geliştirilmiş frontend uygulamasıdır. Proje yönergesinde istenen tüm şartlar eksiksiz olarak yerine getirilmiş, ekstra özelliklerle zenginleştirilmiştir.
 
 ## 🔗 Canlı Demo
-Projeyi canlı olarak incelemek için tıklayın: **https://filmsitesiprojesi.netlify.app/**
+Projeyi canlı olarak incelemek için tıklayın: **https://www.dogancankaygusuz.com/jsfilmsitesi**
 
 ## 📸 Ekran Görüntüleri
 
